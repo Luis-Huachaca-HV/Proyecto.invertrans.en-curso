@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invertrans</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="media/logo.png">
+</head>
+<body>
+    <header>
+        <div class="centrao">
+            <ul class="tam" style="float: left">
+                <li class ="logu" ><a href="#"><img class="banner_image" src="media/logo.png"></a></li>
+            </ul>
+            <ul class="tam" style="float: right">
+                <li> <a class="active" href="index.html"> Inicio </a></li>
+                <li> <a href="servicios.html"> Servicios </a></li>
+                <li> <a href="historia.html"> Historia </a></li>
+                <li> <a href="contacto.html"> Contacto </a></li>
+                <li> <a href="trabaje con nosotros.html"> Trabaje con Nosotros </a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="left_side">
+            <div class="sub_left">
+                <h2>
+                    Servicio Eficiente y confiable
+                </h2>
+            </div>
+            <div class="slider">
+                <div id="imga">
+                    <img class="imga" src="media/img1.png">
+                </div>
+            </div>
+        </div>
+
+        <!--add javascript -->
+        <script>
+            var img = document.getElementById("imga");
+            var imagenes = ['media/img2.png','media/img3.png','media/img4.png','media/img5.png'];
+            var x = 0;
+            function slide() {
+                if (x < imagenes.length) {
+                    x= x+1;
+                }else{
+                    x=1;
+                }
+                img.innerHTML = "<img class='imga' src="+imagenes[x-1]+">";
+            }
+            //auto slide
+            setInterval(slide,8000);
+        </script>
+
+        <div class="rigth-container">
+            <div class="Unidades" >
+                <h2 >Fotos y descripción de las unidades</h2>
+            </div>
+            <div class="descripcion">
+                <div class="auto">
+                    <img class ="img_unidades" src="media/img18.jpeg" alt="img_unidades">
+                    <div class="pe">
+                        <p>
+                            Camioneta 4x4 marca TOYOTA modelo HILUX, año de fabricación 2018 con 5 asientos, color: Plata Metálico, carrocería PICK UP, 
+                        </p>
+                        <p>
+                            Documentos: tarjeta de propiedad, Soat.
+                        </p>
+                    </div>
+                </div>
+                <div class="auto">
+                    <img class ="img_unidades" src="media/img4.png" alt="img_unidades">
+                    <div class="pe">
+                        <p>
+                            Camión de cisterna de combustible marca VOLVO FMX , año de fabricación 2019,  Color: Blanco, Rojo, Azul.
+                        </p>
+                        <p>
+                            Documentos: tarjeta de propiedad, Soat, seguro contra todo riesgo y terceros, tarjeta de circulación.
+                        </p>
+                    </div>
+                </div>
+                <div class="auto">
+                    <img class ="img_unidades" src="media/img14.jpeg" alt="img_unidades">
+                    <div class="pe">
+                        <p>
+                            Camión de cisterna de combustible marca VOLVO VM, año de fabricación 2020, color blanco, rojo, azul. 
+                        </p>
+                        <p>
+                            Documentos del vehículo: tarjeta de propiedad, SOAT, seguro contra todo riesgo y terceros, tarjetda de circulación.
+                        </p>
+                    </div>
+                    </div>
+                <div class="auto">
+                    <img class ="img_unidades" src="media/img11.jpeg" alt="img_unidades">
+                    <div class="pe">
+                        <p>
+                            Camión marca HYUNDAI, año de fabricación: 2017, Modelo HD 78, Color: Blanco, Rojo, Azul. 
+                        </p>
+                        <p>
+                            Documentos: tarjeta de propiedad, Soat, seguro contra todo riesgo y terceros, tarjeta de circulación.
+                        </p>    
+                    </div>
+                </div>
+                <div class="auto">
+                    <img class ="img_unidades" src="media/img1.png" alt="img_unidades">
+                    <p>
+                        Descripcion de la 5° Undidad
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="info-container">
+        <div class="info-main">
+            <h3>Clientes</h3>
+            <p>
+                <img class ="img_clientes" src="media/logo2.jpg" alt="img_clientes">
+            </p>
+            <a href="#">Mas Informacion</a>
+        </div>
+    </div>    
+    <footer>
+        <div style="background: rgb(25, 28, 50);" class ="footer container">
+            <div class="footer-main">
+                <div class="footer-columna">
+                    <h3>Preguntas</h3>
+                    <input type="email" placeholder="Escriba su correo">
+                    <input type="email" placeholder="Escriba su pregunta">
+                    <input type="submit" value="Enviar">
+                </div>
+
+                <div class="footer-columna">
+                    <h3>Dirección</h3>
+                    <span class="fa fa-phone">998801030-998801060</>
+                    <span class="fa fa-envelope">victoriavargas41@hotmail.com</span>
+                </div>
+
+                <div class="footer-columna">
+                    <h3>Sobre Nosotros</h3>
+                    <p class="p_tex">
+                        Lorem Ipsum is ssd it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy-redes">
+            <div class="main-copy-redes">
+                <div class="footer-copy">
+                    &copy; 2020, Todos los derechos reservados - | Invertrans |. 
+                </div>
+                <div class="footer-redes">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a herf="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>       
+</body>
+</html>

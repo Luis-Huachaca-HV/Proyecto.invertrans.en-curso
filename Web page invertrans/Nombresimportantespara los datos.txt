@@ -1,0 +1,5 @@
+soydalto-hacer un e-commerce
+XAMPP- activar siempre apache y MySQL en el panel de control
+localhost/phpmyadmin-base de datos mia para manejar los registros
+xampp htdocs- ahi esta el ejemplo de registro
+localhost/Todo%20Tendencias - para abrir el ejemplo de registro
